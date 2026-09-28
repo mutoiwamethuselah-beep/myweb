@@ -1,0 +1,300 @@
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  color: #2f2f3a;
+  background-color: #fdfaf6;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #4a3f8f, #8e6cd4);
+  color: #fff;
+  padding: 3rem 1.5rem 3.5rem;
+  text-align: center;
+  border-bottom-left-radius: 40% 20px;
+  border-bottom-right-radius: 40% 20px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  color: #4a3f8f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin: 0 auto 1rem auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
+
+/* ===== Nav ===== */
+nav {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem;
+  margin: -1.5rem auto 0;
+  max-width: 700px;
+  border-radius: 40px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 10px;
+  z-index: 10;
+}
+
+nav a {
+  color: #4a3f8f;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #ff8552;
+  color: #fff;
+}
+
+/* ===== Sections ===== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.content-section {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem;
+  margin: 2rem 0;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+#about   { border-top: 6px solid #4a3f8f; }
+#hobbies { border-top: 6px solid #ff8552; background: linear-gradient(to bottom right, #fff7f2, #fff); }
+#plan    { border-top: 6px solid #2fbf9d; }
+#photos  { border-top: 6px solid #f2b134; }
+#media   { border-top: 6px solid #ef5b5b; }
+#contact { border-top: 6px solid #4a3f8f; }
+
+h2 {
+  color: #4a3f8f;
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+h3 {
+  color: #ff8552;
+}
+
+/* ===== Hobbies as pill badges ===== */
+#hobbies ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+#hobbies li {
+  background-color: #ff8552;
+  color: #fff;
+  padding: 0.5rem 1.1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* ===== Learning plan step cards ===== */
+#plan ol {
+  list-style: none;
+  padding: 0;
+  counter-reset: step;
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+#plan ol li {
+  background-color: #f2fbf8;
+  border-left: 4px solid #2fbf9d;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+}
+#plan ol li::before {
+  counter-increment: step;
+  content: counter(step) ". ";
+  font-weight: bold;
+  color: #2fbf9d;
+}
+
+/* ===== Excel-style boxed table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border: 2px solid #2fbf9d;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  color: #2fbf9d;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #b7e4d8;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #2fbf9d;
+  color: #fff;
+  font-weight: 700;
+}
+
+td {
+  background-color: #fff;
+}
+
+tr:nth-child(even) td {
+  background-color: #f2fbf8;
+}
+
+tr:hover td {
+  background-color: #d9f4ec;
+}
+
+/* ===== Photo gallery ===== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.gallery figure {
+  margin: 0;
+  width: 210px;
+  text-align: center;
+  background-color: #fffaf0;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 2px solid #f2b134;
+}
+.gallery img {
+  border-radius: 8px;
+}
+.gallery figcaption {
+  font-size: 0.85rem;
+  color: #7a6a4a;
+  margin-top: 0.5rem;
+}
+
+/* ===== Media ===== */
+video, audio {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0 1rem;
+  border-radius: 8px;
+  border: 2px solid #ef5b5b;
+}
+
+/* ===== Contact form ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 440px;
+  background-color: #f5f3fb;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #4a3f8f;
+}
+
+label {
+  margin-top: 0.9rem;
+  font-weight: 600;
+  color: #4a3f8f;
+}
+
+input, select, textarea {
+  padding: 0.65rem;
+  margin-top: 0.35rem;
+  border: 1px solid #cfc9e6;
+  border-radius: 8px;
+  font-family: inherit;
+  background-color: #fff;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #ff8552;
+  box-shadow: 0 0 0 3px rgba(255,133,82,0.2);
+}
+
+button {
+  margin-top: 1.3rem;
+  padding: 0.75rem 1.2rem;
+  background-color: #ff8552;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+button:hover, button:focus {
+  background-color: #e56b3a;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1.8rem;
+  background-color: #4a3f8f;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  header h1 { font-size: 1.5rem; }
+  nav a { font-size: 0.8rem; padding: 0.4rem 0.7rem; }
+  .gallery figure { width: 100%; }
+  .content-section { min-height: auto; padding: 1.5rem; }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First Web Page</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+   <h1>Welcome to Web Programming</h1>
+</header>
+
+<nav>
+   <a href="#about">About Me</a>
+   <a href="#hobbies">Hobbies</a>
+   <a href="#plan">Learning Plan</a>
+   <a href="#photos">Photos</a>
+   <a href="#media">Media</a>
+   <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>I am currently learning Introduction to Web Technologies at Mulungushi university.I am studying Computer Science, and I am interested in web development because I want to help build web systems. Through this course, I hope to build the skills needed to create my own website and eventually create a system that will help my country. Outside of my studies, I enjoy several hobbies that keep me balanced.</p>
+    </section>
+
+    <section id="hobbies" class ="content-section">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Playing Football</li>
+            <li>Reading Books</li>
+            <li>Travelling</li>
+        </ul>
+    </section>
+
+    <section id="plan" class="content-section">
+        <h2>My Learning Plan</h2>
+        <ol>
+            <li>Practice HTML and CSS layout techniques weekly</li>
+            <li>Learn JavaScript basics</li>
+            <li>Build and deploy a small personal project</li>
+        </ol>
+        
+        <table>
+            <caption>Weekly Web Learning Plan</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Practice Task</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MONDAY</td>
+                    <td>HTML Structure</td>
+                    <td>Build a page with semantic tags</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>CSS Styling</td>
+                    <td>Style a page with a color palatte</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Forms</td>
+                    <td>Create a contact form</td>
+                </tr>
+            </tbody>
+        </table>
+    <section id="photos" class="content-section">
+  <h2>My Photos</h2>
+  <div class="gallery">
+    <figure>
+      <img src="images/photo1.jpg" alt="Describe what this photo shows">
+      <figcaption>Caption explaining photo 1.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/photo2.jpg" alt="Describe what this photo shows">
+      <figcaption>Caption explaining photo 2.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/photo3.jpg" alt="Describe what this photo shows">
+      <figcaption>Caption explaining photo 3.</figcaption>
+    </figure>
+  </div>
+    </section>
+    <section id="media" class="content-section">
+  <h2>My Media</h2>
+
+  <h3>Introduction Video</h3>
+  <video controls src="videos/intro.mp4" style="max-width: 100%;">
+    Your browser does not support the video tag.
+  </video>
+  <p>Summary: In this video, I introduce myself, my programme, and the web skill I'm most excited to learn.</p>
+
+  <h3>Audio Clip</h3>
+  <audio controls src="videos/voice.mp3">
+    Your browser does not support the audio tag.
+  </audio>
+  <p>In this recording, I talk about one of my hobbies and why I enjoy it.</p>
+</section>
+<section id="contact" class="content-section">
+  <h2>Contact</h2>
+  <p>This form is a browser demonstration only and does not send data.</p>
+  <form action="#">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="topic">Topic:</label>
+    <select id="topic" name="topic">
+      <option value="general">General</option>
+      <option value="feedback">Feedback</option>
+      <option value="question">Question</option>
+    </select>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Methuselah Mutoiwa </p>
+</footer>
+</body>
+</html>
