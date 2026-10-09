@@ -4,7 +4,7 @@ By Methuselah Mutoiwa, second year Computer Science student, Mulungushi Universi
 
 A responsive student portfolio built with plain HTML5, CSS and JavaScript for Mulungushi University, ICT251 Web Technologies.
 
-**Live site:** https://YOUR-SITE.onrender.com
+**Live site:** https://methuselah-portfolio.onrender.com
 
 ## Pages and sections
 About Me, My Hobbies, My Learning Plan (with table), Projects and Skills, My Photos, My Media (video and audio) and Contact.
